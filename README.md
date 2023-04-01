@@ -1,4 +1,4 @@
-# **Facial Recognition for Criminal Record Checks using the FaceNet Model**
+# **Facial Recognition for Criminal Record Checks**
 
 
 Conventional criminal record checks by police involve manually searching through databases of criminal records to verify if an individual has a criminal record or not. The process can be time-consuming, inefficient, and prone to human error. Moreover, the information on these databases can become outdated quickly, which means the information accessed may not be up-to-date.
@@ -23,11 +23,11 @@ To use the facial recognition system, follow these steps:
 
 Clone the repository to your local machine. To clone the repository;
 
-    git clone https://github.com/UluLord/Facial-Recognition-for-Criminal-Record-Checks-using-the-FaceNet-Model.git
+    git clone https://github.com/UluLord/Facial-Recognition-for-Criminal-Record-Checks.git
 
 After cloning, change the directory, you are working, to this repository directory;
 
-    cd Facial-Recognition-for-Criminal-Record-Checks-using-the-FaceNet-Model
+    cd Facial-Recognition-for-Criminal-Record-Checks
 
 ### *1.2 Requirements*
 
@@ -51,9 +51,9 @@ To install the required packages, run the following command;
 
 ### *1.3 Prepare a Dataset*
 
-Prepare a database which has personnel informations like ID Number, Name, Surname, Image Path (see database/database.xlsx for an example)
+Prepare a database containing personnel informations like ID number, name, surname, image path (see database/database.xlsx for an example)
 
-### *1.4 Download Pretrained FaceNet Model*
+### *1.4 Specify Pretrained FaceNet Model*
 
 Use **'facenet_model.json'** file, or download a pre-trained FaceNet model (e.g., from https://github.com/davidsandberg/facenet)
 
@@ -79,7 +79,7 @@ The **main.py** script accepts the following command line arguments:
 
 ***Example Usage***
 
-To run the script with a database file located at **./database/database.xlsx**, a FaceNet model from **facenet_model.json** with pre-trained **weights.h5**, and a video source from **a webcam**, use the following command:
+To run the script with a database file located at **./database/database.xlsx**, a FaceNet Model from **facenet_model.json** with pre-trained **weights.h5**, and a video source from **a webcam**, use the following command:
 
     python main.py --database_path ./database/database.xlsx --facenet_model_path facenet_model.json --weights_dir weights.h5 --face_haarcascade_path haarcascade_frontalface_default.xml --source 0
 
@@ -115,11 +115,11 @@ The system outputs a video stream with faces highlighted and labeled if a match 
 
 If you use this repository in your work, please consider citing us as the following.
 
-    @misc{ululord2023facial-recognition-for-criminal-record-checks-using-the-faceNet-model,
+    @misc{ululord2023facial-recognition-for-criminal-record-checks,
 	      author = {Fatih Demir},
-          title = {Facial Recognition for Criminal Record Checks using the FaceNet Model},
+          title = {Facial Recognition for Criminal Record Checks},
           date = {2023-04-01},
-          url = {https://github.com/UluLord/Facial-Recognition-for-Criminal-Record-Checks-using-the-FaceNet-Model}
+          url = {https://github.com/UluLord/Facial-Recognition-for-Criminal-Record-Checks}
           }
 
 
